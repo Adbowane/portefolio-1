@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: win6218.site4now.net
-        username: wanovski-001
+        username: wanovski
         password: Laye2003
-        server-dir: www/githubsite/
+        server-dir: ./githubsite/
