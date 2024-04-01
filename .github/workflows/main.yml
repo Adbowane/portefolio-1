@@ -14,4 +14,4 @@ jobs:
         server: win6218.site4now.net
         username: wanovski-001
         password: Laye2003
-        local-dir: ./githubsite/
+        server-dir: www/githubsite/
