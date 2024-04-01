@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <p>echo</p>
+   <section class="container">
+        <div>
+            <img src="assets/img/Item/c-sharp.png" alt="">
+        </div>
+        <div>
+            <img src="assets/img/Item/cms.png" alt="">
+        </div>
+        <div>
+            <img src="assets/img/Item/Css3.png" alt="">
+        </div>
+        <div>
+            <img src="assets/img/Item/html.png" alt="">
+        </div>
+        <div>
+            <img src="assets/img/Item/js.png" alt="">
+        </div>
+        <div>
+            <img src="assets/img/Item/php.png" alt="">
+        </div>
+        <div><img src="assets/img/Item/windows.png" alt=""></div>
+        <div><img src="assets/img/Item/ps.png" alt=""></div>
+        <div><img src="assets/img/Item/sql-server.png" alt=""></div>
+        <div><img src="assets/img/Item/unity-3d-logo-white.jpg" alt=""></div>
+        <div><img src="assets/img/Item/wogckvea.png" alt=""></div>
+        <div><img src="assets/img/Item/linux.png" alt=""></div>
+    </section>
+
+</body>
+
+</html>
+
+<style>
+.container {
+    width: 52%; /* ou n'importe quelle autre largeur que vous souhaitez */
+    margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  gap: 83px;
+  height: 100vh;
+
+/*each box is 200px by 200px*/
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+
+/* //  Change values 👇  to experiment */
+  justify-items : center;
+}
+/* .container div img:hover {
+     width: 280px;
+     height: 280px;
+} */
+.container div img {
+    width: 250px;
+    height: 250px;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5); /* Ajout de l'ombre à gauche */
+    transition: all 1s ease-in-out; /* Ajout de la transition de 3 secondes */
+}
+
+.container div img:hover {
+    width: 280px;
+    height: 280px;
+}
+
+</style>

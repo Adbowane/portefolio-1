@@ -1,0 +1,276 @@
+
+.papaDiv > div {
+    
+    
+}
+nav ul li a:hover{
+    color: green;
+    transition: 2s;
+}
+.firstDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding-bottom:100px ;
+    padding-top: 130px;
+    padding-left:00px;
+    border: 5px  solid;
+    background-image: url(../image/2.png);
+    
+    
+}
+.tabOfStart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: black;
+    color: white;
+    border: white 5px solid;
+    margin-right: 30px;
+    width: 617px;
+    height: 338px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.trait{
+    width: 115px;
+    height: 10px;
+    background-color: green;
+    margin-top: 25px;
+}
+.block{
+    display: block;
+    color: white;
+    font-size: 27.0px;
+}
+.block2{
+    margin-top: 25px;
+    font-size: large;
+}
+.papaDiv{
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+}
+.papaDiv div {
+    width: 316px;
+    height: 91px;
+    color: whitesmoke;
+    border: white 5px solid;
+    margin: 0.2px;
+    text-align: center;
+    font-size: 30px;
+}
+.gasolina {
+        color: white;
+        margin-left: 200px;
+        width: 50%;
+}
+.siobold{
+        font-size: 33px;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.31);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+.contact h1 span{
+    color: green;
+    background: linear-gradient(rgb(51, 255, 0) , green);
+}
+.contact .box{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.box div{
+    width: 40%;
+    margin: auto;
+}
+.contact .box input{
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 9px 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+.box div{
+    position: relative;
+}
+.box div i{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 20px;
+    left: 20px;
+}
+.contact .box textarea{
+    margin-top: 50px;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid green;
+    outline: none;
+    margin-left: 30px;
+}
+.send{
+    background: linear-gradient(rgb(51, 255, 0) , green);
+    font-size: 19px !important;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px auto !important;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    background: linear-gradient(rgb(51, 255, 0) , green);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+footer .social i{
+    font-size: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.social i:hover{
+    color: palevioletred;
+}
+.about{
+    justify-content: start;
+    margin-bottom: 130px;
+}
+
+/* @media only screen and (max-width: 13px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+/*      .icon{
+                
+                
+        }
+
+        .papaDiv > div {
+            
+            
+        }
+        .firstDiv {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            padding-bottom:100px ;
+            padding-top: 100px;
+            padding-left: 200px;
+            border: 5px  solid;
+            background-image: url(../image/2.png);
+            
+        }
+        .tabOfStart {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            background-color: black;
+            color: white;
+            border: white 5px solid;
+            margin-right: 30px;
+            width: 650px;
+            height: 454px;
+            padding: 15px;
+        }
+        .trait{
+            width: 75px;
+            height: 15px;
+            background-color: green;
+            margin-top: 25px;
+        }
+        .block{
+            display: block;
+            color: white;
+            font-size: 27.0px;
+        }
+        .block2{
+            margin-top: 25px;
+            font-size: large;
+        }
+        .papaDiv{
+            justify-content: center;
+            display: flex;
+            margin: 30px;
+        }
+        .papaDiv div {
+            width: 316px;
+            height: 91px;
+            background-color: green;
+            border: white 5px solid;
+            margin: 0.2px;
+            text-align: center;
+            
+        }
+        .tabOfStartBaby{
+            
+        }
+        .bold{
+            font-size: auto;
+            font-weight: bold;
+        }
+
+
+ 
+ 
+ 
+ /*       .firstDiv {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            
+            border: 5px green solid;
+        }
+        .tabOfStart {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            background-color: black;
+            color: white;
+            border: red 5px solid;
+            margin-right: 30px;
+        }
+        .trait{
+            width: 75px;
+            height: 15px;
+            background-color: blue;
+        }
+        .block{
+            display: block;
+            margin-bottom: 50px;
+        }
+        .papaDiv{
+            justify-content: center;
+            display: flex;
+            margin: 30px;
+        }
+        .papaDiv div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin: 2px;
+        }
+        .tabOfStartBaby{
+            
+        }
+        .bold{
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+ 
+ 

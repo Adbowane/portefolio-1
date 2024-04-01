@@ -1,0 +1,300 @@
+body{
+    
+    background: black;
+    font-family: 'Space Grotesk';
+}
+ 
+.div1{
+    
+    display: flex;
+    background-color: white;
+    height:3px ;
+    width:700px ;
+    
+}
+.bigdiv{
+    justify-content: end ;
+    display: flex;
+}
+ 
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1000px;
+    justify-content: end;
+    margin-right: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+} 
+
+
+
+nav li a {
+    color: white;
+    padding: 1rem  ;
+    text-decoration: none;
+    font-size:20px ;
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 150px;
+    color: white;
+}
+#divpoint{
+    display: flex;
+    margin-top: 175px;
+    margin-left: 150px;
+    
+}
+.element{
+    width: 25px;
+    height: 15px;
+    background-color: white;
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100000%;
+}
+
+.div2{
+    
+    height:3px ;
+    width: 31.5%; 
+    margin-left: 69%;
+    background: white;
+    
+}
+.photo{
+    width: 500px;
+    height: 500px;
+    border: 1PX black solid;
+    border-radius: 10000px;
+    margin-left: 60px;
+    margin-top: 100px;
+    
+}
+.aboutme{
+    display: flex;
+}
+.texteaboutme{
+    display: block;
+    margin-left: 0;
+    margin-right: 300px;
+    color: white;
+    font-size: 35px;
+}
+.texteaboutme div {
+    color: white;
+    font-size: 130px;
+    text-align: center;
+
+}
+.littlediv{
+    display: flex;
+    text-align: right;
+    color: red;
+    margin-top: 250px;
+    
+}
+.littledivfils1{
+    display:block ;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 50px;
+
+}
+.littledivfils1 p {
+    background-color: black ;
+    border: 1px white solid;
+    border-radius: 100px;
+    padding: 0;
+    text-align: center;
+
+}
+.littledivfils2 p {
+    background-color: black ;
+    border: 1px white solid;
+    border-radius: 100px;
+    padding: 0;
+    text-align: center;
+
+}
+.littledivfils2{
+    display: block;
+    
+}
+.bigdiv{
+    display: flex;
+    color: gray;
+    font-size: 25px;
+    justify-content: end;   
+}
+.bigdivfils1{
+    border: 1px black solid;
+    display: block;
+    
+   
+}
+
+.bigdivfils1 p {
+ background-color: white;
+ border: 1px white solid;
+ border-radius: 80px;
+ text-align: center;
+ padding: 7px;
+
+}
+.bigdivfils2 {
+     
+    border-right: 3px white solid;
+    border-top: 3px white solid;
+    display: block;
+    margin-right: 9px;
+
+}
+.bigdivfils2 p {
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 80px;
+    text-align: center;
+}
+.bigdivfils3 p {
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 80px;
+    text-align: center;
+    margin-left: 30px;
+}
+.bigdivfils3{
+    border-left: 3px #ff9800 solid;
+    border-top: 3px #ff9800 solid;
+    margin-left: 9px;
+}
+.bigdivfils4 p {
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 80px;
+    text-align: center;
+}
+.sectionpar{
+    margin-top: 100px;
+}
+.colorbloc{
+    background-color: #ff9800;
+    border: 1px white solid;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 15px;
+
+}
+.bold{
+    font-size: 40px;
+    color: white;
+}
+.nobold{
+    font-size: 15px;
+    color: green;
+}
+.nobold span {
+    font-size: 30px ;  
+}
+nav ul li a:hover{
+    color: green;
+    transition: 2s;
+}
+.contact{
+    width: 100%;
+    text-align: center;
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+.contact h1 span{
+    color: green;
+    background: linear-gradient(rgb(51, 255, 0) , green);
+}
+.contact .box{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.box div{
+    width: 40%;
+    margin: auto;
+}
+.contact .box input{
+    width: 90%;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 9px 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+.box div{
+    position: relative;
+}
+.box div i{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 20px;
+    left: 20px;
+}
+.contact .box textarea{
+    margin-top: 50px;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 1px solid green;
+    outline: none;
+    margin-left: 30px;
+}
+.send{
+    background: linear-gradient(rgb(51, 255, 0) , green);
+    font-size: 19px !important;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px auto !important;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    background: linear-gradient(rgb(51, 255, 0) , green);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+footer .social i{
+    font-size: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.social i:hover{
+    color: palevioletred;
+}
+.about{
+    justify-content: start;
+    margin-bottom: 130px;
+}

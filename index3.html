@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemple de background animé en Three.js</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: beige;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script>
+      // Copier et coller le code Three.js modifié ici
+    // Créer une scène, une caméra et un renderer
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+var renderer = new THREE.WebGLRenderer();
+
+// Ajouter le renderer à la page et changer la couleur du background en beige et bleu
+renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setClearColor(new THREE.Color(0xbea6a6), 1);
+document.body.appendChild( renderer.domElement );
+
+// Ajouter un effet de brouillard pour créer une ambiance cyber
+scene.fog = new THREE.FogExp2( 0x000000, 0.01 );
+
+// Ajouter un cube pour créer un effet de toile d'araignée
+var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+var cube = new THREE.Mesh( geometry, material );
+// Enlever le cube de la scène
+// scene.add( cube );
+
+// Ajouter un effet de déplacement des toiles d'araignée en utilisant la souris
+var mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', function(event) {
+  mouseX = (event.clientX - window.innerWidth/2);
+  mouseY = (event.clientY - window.innerHeight/2);
+});
+
+var spiderWeb = [];
+for (var i = 0; i < 50; i++) {
+  var spiderGeometry = new THREE.Geometry();
+  spiderGeometry.vertices.push(new THREE.Vector3(0,0,0));
+  spiderGeometry.vertices.push(new THREE.Vector3(mouseX, mouseY, 0));
+  spiderGeometry.colors.push(new THREE.Color(0xffffff));
+  spiderGeometry.colors.push(new THREE.Color(0x000000));
+  var spiderMaterial = new THREE.LineBasicMaterial({
+    color: 0xffffff,
+    linewidth: 1
+  });
+  var spiderLine = new THREE.Line(spiderGeometry, spiderMaterial);
+  scene.add(spiderLine);
+  spiderWeb.push({
+    line: spiderLine,
+    start: new THREE.Vector3(),
+    end: new THREE.Vector3()
+  });
+}
+
+// Animer le déplacement des toiles d'araignée
+function animate() {
+	requestAnimationFrame( animate );
+	spiderWeb.forEach(function(spider) {
+    spider.start.x += (mouseX - spider.start.x) * 0.05;
+    spider.start.y += (mouseY - spider.start.y) * 0.05;
+    spider.end.x = spider.start.x;
+    spider.end.y = spider.start.y;
+    spider.line.geometry.verticesNeedUpdate = true;
+    spider.line.geometry.vertices[0] = spider.start;
+    spider.line.geometry.vertices[1] = spider.end;
+	});
+	renderer.render( scene, camera );
+}
+animate();
+
+    </script>
+  </body>
+</html>
+
+		
